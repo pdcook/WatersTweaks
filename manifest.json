@@ -1,0 +1,11 @@
+{
+    "name": "Waters_Tweaks",
+    "version_number": "0.0.0",
+    "website_url": "https://github.com/pdcook/WatersTweaks",
+    "description": "Custom card and tweaks to vanilla cards. Commissioned by Water.",
+    "dependencies": [
+        "willis81808-UnboundLib-2.7.0",
+	"willis81808-MMHook-1.0.0",
+	"BepInEx-BepInExPack_ROUNDS-5.4.1100"
+    ]
+}
