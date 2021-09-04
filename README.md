@@ -8,11 +8,14 @@ Commissioned by Water
 ## New Card
 -----------
 
-#### Extra Ammo
+### Extra Ammo
 --------------
 *Common*
 
 Get some more ammo!
+
+-------------------
+-------------------
 
 ## Vanilla Card Tweaks (Togglable)
 ----------------------------------
