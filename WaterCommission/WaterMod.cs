@@ -31,7 +31,7 @@ namespace WaterMod
 
         private const string ModName = "Water's Tweaks";
         private const string CompatibilityModName = "WatersTweaks";
-        private const string Version = "0.0.0";
+        private const string Version = "0.0.1";
         internal static AssetBundle ArtAssets;
 
         private static ConfigEntry<bool> QuickShotConfig;
@@ -97,7 +97,7 @@ namespace WaterMod
                 TweakCards.Tweak();
             }
             MenuHandler.CreateToggle(QuickShotConfig.Value, "Tweak Quick Shot", menu, QuickShotCheckbox, 30);
-            MenuHandler.CreateText("Remove projectile speed stat, add +50% attack speed, increase reload time by 0.5s", menu, out TextMeshProUGUI _, 30);
+            MenuHandler.CreateText("Remove projectile speed stat, add +100% attack speed, increase reload time by 0.5s", menu, out TextMeshProUGUI _, 30);
             void GrowCheckbox(bool flag)
             {
                 GrowConfig.Value = flag;
