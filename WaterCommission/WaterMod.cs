@@ -31,7 +31,7 @@ namespace WaterMod
 
         private const string ModName = "Water's Tweaks";
         private const string CompatibilityModName = "WatersTweaks";
-        private const string Version = "0.0.1";
+        private const string Version = "0.0.2";
         internal static AssetBundle ArtAssets;
 
         private static ConfigEntry<bool> QuickShotConfig;
@@ -78,7 +78,9 @@ namespace WaterMod
             Unbound.RegisterHandshake(ModId, OnHandShakeCompleted);
 
             // tweak cards
-            TweakCards.Tweak();
+            //TweakCards.Tweak();
+
+            Unbound.AddAllCardsCallback(TweakCards.Tweak); // better forward compatibility
 
             // add init hook to tweak cards
             GameModeManager.AddHook(GameModeHooks.HookInitStart, TweakCards.TweakEnum);

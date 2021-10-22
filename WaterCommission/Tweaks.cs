@@ -46,8 +46,10 @@ namespace WaterMod
             Tweak();
             yield break;
         }
-        internal static void Tweak()
+        internal static void Tweak(CardInfo[] allCards = null)
         {
+            allCards ??= TweakCards.allCards.ToArray();
+
             foreach (CardInfo card in allCards)
             {
                 switch (card.cardName.ToLower())
